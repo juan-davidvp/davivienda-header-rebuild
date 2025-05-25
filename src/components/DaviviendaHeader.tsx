@@ -1,19 +1,14 @@
-
 import React, { useState } from 'react';
 import { Users, Building2, ChevronDown, ShoppingBag, CreditCard, Home, DollarSign, Shield, Zap, Users2, TrendingUp, Lock, Smartphone } from 'lucide-react';
-
 const DaviviendaHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <header className="bg-davivienda-red text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+  return <header className="bg-davivienda-red text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="container mx-auto px-4">
         {/* Main Header Row */}
-        <div className="flex items-center justify-between py-2">
+        <div className="flex items-center justify-center py-2">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" title="Volver a Home personas" className="block">
@@ -50,10 +45,7 @@ const DaviviendaHeader = () => {
             </div>
 
             {/* Login Button */}
-            <a 
-              href="/login" 
-              className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors flex items-center space-x-2"
-            >
+            <a href="/login" className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors flex items-center space-x-2">
               <Lock className="w-4 h-4" />
               <span>INGRESO<br />CLIENTES</span>
             </a>
@@ -65,10 +57,7 @@ const DaviviendaHeader = () => {
           <div className="flex items-center justify-between p-3">
             {/* Aquí Puedo Button */}
             <div className="flex-shrink-0">
-              <button
-                onClick={toggleMenu}
-                className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors"
-              >
+              <button onClick={toggleMenu} className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors">
                 <span className="font-medium">Aquí puedo</span>
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMenuOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -88,8 +77,7 @@ const DaviviendaHeader = () => {
           </div>
 
           {/* Dropdown Menu */}
-          {isMenuOpen && (
-            <div className="bg-white border-t border-gray-200 p-6 shadow-lg">
+          {isMenuOpen && <div className="bg-white border-t border-gray-200 p-6 shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {/* Construir mi futuro */}
                 <div>
@@ -240,12 +228,9 @@ const DaviviendaHeader = () => {
                   <span>Defensor del consumidor financiero</span>
                 </a>
               </div>
-            </div>
-          )}
+            </div>}
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default DaviviendaHeader;

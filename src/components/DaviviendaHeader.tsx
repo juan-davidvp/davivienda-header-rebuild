@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Users, Building2, ChevronDown, ShoppingBag, CreditCard, Home, DollarSign, Shield, Zap, Users2, TrendingUp, Lock, Smartphone } from 'lucide-react';
 const DaviviendaHeader = () => {
@@ -9,7 +8,7 @@ const DaviviendaHeader = () => {
   return <header className="bg-davivienda-red text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="container mx-auto px-4">
         {/* Main Header Row */}
-        <div className="flex items-center justify-between py-2 gap-6">
+        <div className="flex items-center justify-center py-2">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" title="Volver a Home personas" className="block">

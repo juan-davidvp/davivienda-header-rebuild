@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Users, Building2, ChevronDown, ShoppingBag, CreditCard, Home, DollarSign, Shield, Zap, Users2, TrendingUp, Lock, Smartphone } from 'lucide-react';
 
@@ -59,7 +58,7 @@ const DaviviendaHeader = () => {
 
         {/* Aquí Puedo Section */}
         <div className="bg-gray-100 text-gray-800 mt-2 rounded-lg overflow-hidden">
-          <div className="flex items-center justify-between p-3">
+          <div className="w-full flex items-center justify-between p-3">
             {/* Aquí Puedo Button */}
             <div className="flex-shrink-0">
               <button onClick={toggleMenu} className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors">
